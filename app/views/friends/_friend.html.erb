@@ -1,0 +1,12 @@
+<tr id="<%= dom_id(friend) %>">
+  <td><%= friend.first_name %></td>
+  <td><%= friend.last_name %></td>
+  <td><%= friend.email %></td>
+  <td><%= friend.phone %></td>
+  <td><%= friend.twitter %></td>
+  <td>
+    <%= link_to "Show", friend_path(friend), class: "btn btn-sm btn-dark" %>
+    <%= link_to "Edit", edit_friend_path(friend), class: "btn btn-sm btn-dark" %>
+    <%= link_to "Delete", friend_path(friend), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-sm btn-secondary" %>
+  </td>
+</tr>
