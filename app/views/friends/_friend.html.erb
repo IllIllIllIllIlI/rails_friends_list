@@ -7,6 +7,6 @@
   <td>
     <%= link_to "Show", friend_path(friend), class: "btn btn-sm btn-dark" %>
     <%= link_to "Edit", edit_friend_path(friend), class: "btn btn-sm btn-dark" %>
-    <%= link_to "Delete", friend_path(friend), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-sm btn-secondary" %>
+    <%= button_to "Delete", friend_path(friend), method: :delete, data: { turbo_confirm: "Are you sure?" }, class: "btn btn-sm btn-secondary" %>
   </td>
 </tr>
